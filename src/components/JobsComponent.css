@@ -1,0 +1,29 @@
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 10px;
+}
+
+.job-card {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px; 
+}
+
+@media screen and (max-width: 800px) {
+  .job-card {
+    width: calc(50% - 10px); 
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .job-card {
+    width: 100%;
+  }
+}

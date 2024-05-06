@@ -1,0 +1,225 @@
+.widget-container {
+  max-width: 22rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding: 1.5rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.widget-container::before,
+.widget-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.widget-container::before {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+
+.widget-container::after {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #4b5563;
+  padding: 1px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  max-width: 45%;
+  border-radius: 15px;
+  border: 1px black;
+}
+
+.info img {
+  height: 15px;
+  width: 15px;
+  padding: 5px;
+}
+
+.custom-job-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.custom-company-info {
+  display: flex;
+  align-items: center;
+}
+
+.custom-company-logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.custom-company-details {
+  margin-left: 0.75rem;
+}
+
+.custom-company-name {
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 0.7;
+  color: #4b5563;
+}
+
+.custom-job-title {
+  font-weight: 300;
+  font-size: 17px;
+  color: black;
+  text-transform: capitalize;
+}
+
+.custom-job-location {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 3.75rem;
+  text-transform: capitalize;
+}
+
+.about-company {
+  text-align: center;
+  position: relative;
+}
+
+.company-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: left;
+  color: #4b5563;
+}
+
+.company-description {
+  position: relative;
+  font-size: 0.875rem;
+  color: #4b5563;
+  text-align: left;
+  margin-top: 0.25rem;
+  height: 18vh;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.company-description::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(transparent, #ffffff);
+}
+
+.estimated-salary {
+  display: flex;
+  color: grey;
+}
+
+.salary-heading {
+  color: grey;
+  font-size: 16px;
+}
+
+.job-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: large;
+  margin-top: 0.5rem;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.min-experience {
+  margin-top: 1rem;
+}
+
+.experience-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #4c525c;
+  margin-top: 0.0rem;
+}
+
+.experience {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.buttons-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apply-btn,
+.referral-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  color: #201e1a;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apply-btn {
+  background-color: rgba(84, 239, 195, 1);
+}
+
+.referral-btn {
+  background-color: rgba(73, 67, 218, 1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.referral-btn .referral-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatars-container {
+  display: flex;
+  margin-bottom: 1rem;
+  height: 100%;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  padding-right: 10px;
+  filter: blur(1px); 
+}
+
+.apply-btn:hover,
+.referral-btn:hover {
+  background: #f5b744;
+}

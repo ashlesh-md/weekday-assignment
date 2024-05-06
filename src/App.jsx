@@ -1,12 +1,30 @@
-import './App.css'
+import JobsComponent from './components/JobsComponent';
+import FilterBox from './components/FilterBox';
+import { useState } from 'react';
 
-function App() {
-
+const App = () => {
+  const [filters, setFilters] = useState({
+    roles: [],
+    jobLocation: [],
+    experience: [],
+    remote: [],
+    minimumSalary: [],
+    searchQuery: ''
+  });
+  const handleFilterChange = (filterName, value) => {
+    setFilters(prevFilters => ({
+      ...prevFilters,
+      [filterName]: value.toString().toLowerCase()
+    }));
+  };
   return (
     <>
-      <p>Weekday Assignment</p>
+      <FilterBox
+        handleFilterChange={handleFilterChange}
+      />
+      <JobsComponent filters={filters} />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
