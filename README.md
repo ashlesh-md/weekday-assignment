@@ -10,6 +10,7 @@ This project is a React application that displays job listings with filtering ca
 - Implements React components for modularity and reusability.
 - Implements infinite scrolling for fetching additional job listings as the user scrolls down.
 - Provides search functionality for quickly finding specific job listings.
+- Ensures responsiveness for seamless user experience across different devices.
 
 ## Prerequisites
 
@@ -46,5 +47,5 @@ Before running this application, ensure you have Node.js and npm (Node Package M
 ![Screenshot 1](/src/assets/sceenshots/screenshot1.png)
 ![Screenshot 2](/src/assets/sceenshots/screenshot2.png)
 ![Screenshot 3](/src/assets/sceenshots/screenshot3.png)
-![Screenshot 4](/src/assets/sceenshots/screenshot4.png)
-![Screenshot 5](/src/assets/sceenshots/screenshot5.png)
+![Screenshot 4](/src/assets/sceenshots/screenshot4.png =250x)
+![Screenshot 5](/src/assets/sceenshots/screenshot5.png =250x)
