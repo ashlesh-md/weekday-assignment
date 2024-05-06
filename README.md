@@ -38,7 +38,7 @@ Before running this application, ensure you have Node.js and npm (Node Package M
 4. **Run The Application:**
 
    ```
-   npm install
+   npm run dev
    ```
 
 ## Screenshots
