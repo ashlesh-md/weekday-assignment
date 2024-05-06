@@ -47,5 +47,5 @@ Before running this application, ensure you have Node.js and npm (Node Package M
 ![Screenshot 1](/src/assets/sceenshots/screenshot1.png)
 ![Screenshot 2](/src/assets/sceenshots/screenshot2.png)
 ![Screenshot 3](/src/assets/sceenshots/screenshot3.png)
-![Screenshot 4](/src/assets/sceenshots/screenshot4.png =250x)
-![Screenshot 5](/src/assets/sceenshots/screenshot5.png =250x)
+![Screenshot 4](/src/assets/sceenshots/screenshot4.png)
+![Screenshot 5](/src/assets/sceenshots/screenshot5.png)
